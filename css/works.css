@@ -1,0 +1,289 @@
+body{
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+    margin: 0;
+    color: #1b262c;
+    background-image: url("../images/work-background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+header .mobile,
+main .mobile{
+    display: none;
+}
+/*-----------HEADER // NAVIGATION------------*/
+header .desktop{
+    display: inline-block;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 9999;
+    background-color: #EBECF1;
+    top: 0;
+}
+.desktop h3{
+    cursor: pointer;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #006a71;
+    border-top: 1px solid #006a71;
+    border-bottom: 1px solid #006a71;
+    max-width: 500px;
+    transition: all 300ms ease-in-out 0.2s;
+
+}
+.desktop h3:hover{
+    cursor: pointer;
+}
+.desktop ul li{
+    list-style: none;
+    margin: 10px 30px;
+    padding: 0 30px;
+    float: right;
+}
+.desktop  ul li button{
+    font-family: 'PT Serif', serif;
+    padding: 5px 10px;
+    margin-top: -5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.desktop ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 3px 20px;
+    transition: all 400ms ease-in-out 0.1s;
+}
+.desktop ul li a:hover{
+    cursor: pointer;
+    background-color: #7D96AC;
+    color: white;
+    width: 100%;
+}
+@media only screen and (max-width: 450px){
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: inline-block;
+        width: 100%;
+    }
+    header .mobile h3{
+        float: left;
+        cursor: pointer;
+        margin: 15px;
+        padding: 10px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        color: #006a71;
+        border-top: 1px solid #006a71;
+        border-bottom: 1px solid #006a71;
+        max-width: 500px;
+        transition: all 300ms ease-in-out 0.2s;
+    }
+    header .mobile .list ul li{
+        float: right;
+        margin: 10px;
+        list-style: none;
+    }
+    header .mobile .list ul li a{
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #1f5164;
+    }
+    header .mobile .list ul li a:hover{
+        color: #f18741;
+    }
+}
+/*----------------------MAIN--------------------*/
+main{
+    position: relative;
+    top: 100px;
+}
+
+/*--------Main//Intro section----------*/
+main #intro{
+    margin-bottom: 50px;
+}
+main #intro h1,
+main #intro p{
+    text-align: center;
+    color: #1b262c;
+}
+main #intro h1{
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;;
+    margin-bottom: 0;
+    margin-top: 20px;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+main #intro p{
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 1.5;
+}
+@media only screen and (max-width: 450px){
+    main{
+        top: 10px;
+    }
+    main #intro h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    main #intro p{
+        font-size: 12px;
+        margin: 0 20px;
+    }
+}
+/*--------Main//projects section----------*/
+#projects .work img{
+    width: 500px;
+    height: 380px;
+    /*border-radius: 5%;*/
+    transition: all 300ms ease-in-out 0.15s;
+}
+#projects .work img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+#projects .work p{
+    font-size: 12px;
+    text-align: left;
+    color: #ebecf1;
+}
+#projects .work h3{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: black;
+}
+#projects .work{
+    background-color: hsla(201, 35%, 67%, 0.2);
+    margin-bottom: 50px;
+    width: 500px;
+    /*border-radius: 5%;*/
+    transition: all 300ms ease-in-out 0.15s; 
+}
+#projects .work:hover{
+    cursor: pointer;
+}
+#projects .work .description{
+    padding: 10px ;
+}
+#projects .work .description p{
+    color: black;
+}
+#projects .work .description a{
+    color: #96bb7c;
+    transition: all 300ms ease-in-out 0.15s;
+}
+#projects .work .description a:hover{
+    color: black;
+    cursor: pointer;
+}
+#projects{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-content: space-around;
+}
+@media only screen and (max-width: 450px){
+    #projects .work img{
+        width: 300px;
+        height: 200px;
+    }
+    #projects .work{
+        width: 300px;
+    }
+    #projects .work h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #projects .work .description p{
+        display: none;
+    }
+    #projects .work .description a{
+        color: black;
+        font-size: 12px;
+        padding-left: 36%;
+    }
+    #projects .work .description a:hover{
+        color: #f18741;
+    }
+}
+/*
+#extra{
+    margin-bottom: 70px;
+}
+#extra h3{
+    display: block;
+    margin: 10px auto;
+    border: 1px solid transparent;
+    background-color: hsla(201, 35%, 67%, 0.2);
+    padding: 15px 40px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    color: whitesmoke;
+    transition: all 300ms ease-in-out 0.15s;
+}
+#extra h3:hover{
+    background-color: rgba(231, 20, 20, 0.7);
+    cursor: pointer;
+}
+*/
+/*-----------Footer------------*/
+footer{
+    position: relative;
+    top: 50px;
+    margin-top: 30px;
+    padding-top: 15px;
+    background-color: #EBECF1;
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+}
+footer p{
+    float: left;
+    padding-left: 10px;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 12px;
+    color: black;
+}
+footer ul li{
+    list-style: none;
+    margin: 0px 20px;
+    float: right;
+}
+footer ul li a{
+    text-emphasis: none;
+    color: rgb(70, 67, 67);
+    font-size: 17px;
+    transition: all 700ms ease 0.16s;
+}
+footer ul li a:hover{
+    color: #810102;
+    cursor: pointer;
+}
+@media only screen and (max-width: 450px){
+    footer p{
+        padding-top: 5px;
+        font-size: 10px;
+    }
+    footer ul li a{
+        font-size: 14px;
+    }
+}

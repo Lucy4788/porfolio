@@ -1,0 +1,274 @@
+/*-----#d3de32 : xanh la chuoi nhat -------*/
+/*------#cbeaed : xanh da troi nhat-------*/
+/*-----#ffffdd : mau kem-------*/
+/*-----#006a71 : turquoise xanh da troi tham-----*/
+
+body{
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url("../images/background-contact.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header .mobile,
+main .mobile,
+#mobile-contact{
+    display: none;
+}
+@media only screen and (max-width: 450px){
+    body{
+        background-image: url("../images/mobile/mobile-main-cover.jpg");
+        background-size: cover;
+        background-position: top bottom;
+        background-repeat: no-repeat;
+    }
+}
+/*-----------Header------------*/
+header .desktop{
+    display: inline-block;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 9999;
+    background-color: #EBECF1;
+}
+.desktop h3{
+    cursor: pointer;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #006a71;
+    border-top: 1px solid #006a71;
+    border-bottom: 1px solid #006a71;
+    max-width: 500px;
+    transition: all 300ms ease-in-out 0.2s;
+
+}
+.desktop h3:hover{
+    color: #006a71;
+    cursor: pointer;
+}
+.desktop ul li{
+    list-style: none;
+    margin: 10px 30px;
+    padding: 0 30px;
+    float: right;
+}
+.desktop  ul li button{
+    font-family: 'PT Serif', serif;
+    padding: 5px 10px;
+    margin-top: -5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.desktop ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 3px 20px;
+    transition: all 400ms ease-in-out 0.1s;
+}
+.desktop ul li a:hover{
+    cursor: pointer;
+    background-color: #7D96AC;
+    color: white;
+    width: 100%;
+}
+@media only screen and (max-width: 450px){
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: inline-block;
+        width: 100%;
+    }
+    header .mobile h3{
+        float: left;
+        cursor: pointer;
+        margin: 15px;
+        padding: 10px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        color: #006a71;
+        border-top: 1px solid #006a71;
+        border-bottom: 1px solid #006a71;
+        max-width: 500px;
+        transition: all 300ms ease-in-out 0.2s;
+    }
+    header .mobile .list ul li{
+        float: right;
+        margin: 10px;
+        list-style: none;
+    }
+    header .mobile .list ul li a{
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #1f5164;
+    }
+    header .mobile .list ul li a:hover{
+        color: #f18741;
+    }
+}
+/*---------------------main---------------------------*/
+#avatar{
+    position: relative;
+    top: 130px;
+}
+#avatar img{
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: 430px;              
+    /*width: 235px;
+    height: 220px;
+    border-radius: 50%;*/
+}
+#contact-info{
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 4px 15px;
+    width: 100%;
+    height: 100%;
+}
+.contact-details{
+    grid-area: 1/1/3/2;
+    justify-content: space-around;
+    padding-top: 0px;
+    padding-left: 100px;
+}
+.contact-details p{
+    font-size: 15px;
+    line-height: 2;
+    color: #EBECF1;
+}
+.contact-details a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #EBECF1;
+    transition: all 300ms ease-out 0.2s;
+}
+.contact-details a:hover{
+    color: rgb(199, 226, 146);
+}
+.social-media{
+    grid-area: 2/1/4/2;
+    padding-top: 0;
+    padding-left: 100px;
+}
+.social-media a{
+    color: rgb(39, 38, 38);
+    padding-right: 25px;
+    margin-left: 0;
+    font-size: 20px;
+    transition: all 300ms ease-out 0.2s;
+}
+.social-media a:hover{
+    color: #810102;
+    font-size: 22px;
+    cursor: pointer;
+}
+.contact-form{
+    grid-area: 1/2/4/4;
+}
+.contact-form h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-top: 0;
+    color: #EBECF1;
+}
+.contact-form input{
+   width: 75%;
+   padding: 10px;
+   margin: 5px 0;
+}
+.contact-form form input{
+    width: 30%;
+    font-family: 'PT Serif', serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    background-color: hsla(36, 24%, 73%, 0.7);
+    transition: all 300ms ease-out 0.2s;
+    color: #EBECF1;
+}
+.contact-form form input:hover{
+    cursor: pointer;
+    color: white;
+}
+
+@media only screen and (max-width: 450px){
+    #avatar,
+    #contact-info{
+        display: none;
+    }
+    #mobile-contact{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+    }
+    #avatar-mobile img{
+        width: 320px;
+        height: 250px; 
+        display: block;
+        margin: 0 auto;
+    }
+    .mobile-contact-details{
+        padding-top: 20px;
+    }
+    .mobile-contact-details p{
+        font-size: 12px;
+        text-align: center;
+        line-height: 2;
+        margin: 5px 8px;
+    }
+    .mobile-contact-details p a{
+        color: black;
+        text-decoration: none;
+        transition: all 300ms ease-out 0.2s;
+    }
+    .mobile-contact-details p a:hover{
+        color: #f18741;
+    }
+    .social-media a{
+        font-size: 12px;
+    }
+    .social-media a:hover{
+        font-size: 14px;
+        color: #f18741;
+    }
+    .social-media{
+        margin: 10px auto;
+        padding-left: 90px;
+    }
+}
+/*---------------------footer---------------------------*/
+footer{
+    position: relative;
+    top: 190px;
+    height: 60px;
+    background-color: hsla(230, 18%, 93%, 0.3);
+    padding-top: 15px;
+}
+footer div p{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 0px;
+}
+@media only screen and (max-width: 450px){
+    footer{
+        top: 50px;
+        height: 70px;
+        background-color: transparent;
+
+    }
+    footer div{
+        padding-top: 15px;
+    }
+}

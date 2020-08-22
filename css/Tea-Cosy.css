@@ -1,0 +1,254 @@
+body{
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url("../images/projects/Colma-background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /*color: white;*/
+}
+header .mobile,
+main .mobile{
+    display: none;
+}
+/*-----------Header------------*/
+header .desktop{
+    display: inline-block;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 9999;
+    background-color: #EBECF1;
+}
+.desktop h3{
+    cursor: pointer;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #006a71;
+    border-top: 1px solid #006a71;
+    border-bottom: 1px solid #006a71;
+    max-width: 500px;
+    transition: all 300ms ease-in-out 0.2s;
+
+}
+.desktop h3:hover{
+    color: #006a71;
+    cursor: pointer;
+}
+.desktop ul li{
+    list-style: none;
+    margin: 10px 30px;
+    padding: 0 30px;
+    float: right;
+}
+.desktop  ul li button{
+    font-family: 'PT Serif', serif;
+    padding: 5px 10px;
+    margin-top: -5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.desktop ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 3px 20px;
+    transition: all 300ms ease-in-out 0.2s;
+}
+.desktop ul li a:hover{
+    cursor: pointer;
+    background-color: #7D96AC;
+    color: white;
+    width: 100%;
+}
+@media only screen and (max-width: 450px){
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: inline-block;
+        width: 100%;
+    }
+    header .mobile h3{
+        float: left;
+        cursor: pointer;
+        margin: 15px;
+        padding: 10px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        color: #006a71;
+        border-top: 1px solid #006a71;
+        border-bottom: 1px solid #006a71;
+        max-width: 500px;
+        transition: all 300ms ease-in-out 0.2s;
+    }
+    header .mobile .list ul li{
+        float: right;
+        margin: 10px;
+        list-style: none;
+    }
+    header .mobile .list ul li a{
+        text-decoration: none;
+        padding: 5px 10px;
+        color: #1f5164;
+    }
+    header .mobile .list ul li a:hover{
+        color: #f18741;
+    }
+}
+/*---------------Main------------*/
+main{
+    position: relative;
+    top: 150px;
+}
+#banner img{
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+#banner h4{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    word-spacing: 2px;
+    font-family: 'Merriweather', serif;;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#details{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   width: 100%;
+}
+#details .description{
+    width: 50%;
+}
+#details .description h3{
+    color: rgb(210, 67, 51);
+}
+#details .description p{
+    font-size: 15px;
+    padding-right: 40px;
+    line-height: 2;
+}
+#details .summary a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#details .summary a:hover{
+    color: rgb(210, 67, 51);
+}
+.live-version h2 a{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    max-width: 250px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    background-color: #EBECF1;
+    transition: all 700ms ease 0.16s;
+}
+.live-version h2 a:hover{
+    color: white;
+    background-color: rgb(210, 67, 51);
+    cursor: pointer;
+}
+@media only screen and (max-width: 450px){
+    main{
+        top: 50px;
+    }
+    #banner img{
+        width: 350px;
+        height: 260px;
+        border-radius: 5px;
+    }
+    #banner h4{
+        font-size: 30px;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        color: #1f5164;
+
+    }
+    #details .description h3,
+    #details .summary h3{
+        color: rgb(210, 67, 51);
+    }
+    #details .description p{
+        text-align: justify;
+        padding-right: 10px;
+    }
+    #details .summary{
+        padding-left: 20px;
+        text-align: justify;
+    }
+    #details .description,
+    #details .summary,
+    #details .description p{
+        font-size: 12px;
+    }
+    .live-version h2{
+        padding-top: 30px;
+    }
+    .live-version h2 a{
+        font-size: 15px;
+    }
+}
+
+/*-----------Footer------------*/
+footer{
+    position: relative;
+    top: 170px;
+    margin-top: 30px;
+    padding-top: 15px;
+    background-color: #EBECF1;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+}
+footer p{
+    float: left;
+    padding-left: 10px;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 12px;
+    color: black;
+}
+footer ul li{
+    list-style: none;
+    margin: 0px 20px;
+    float: right;
+}
+footer ul li a{
+    text-emphasis: none;
+    color: black;
+    font-size: 17px;
+    transition: all 700ms ease 0.16s;
+}
+footer ul li a:hover{
+    color: #ffffdd;
+    cursor: pointer;
+}
+@media only screen and (max-width: 450px){
+    footer p{
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    footer ul li a{
+        font-size: 12px;
+    }
+}

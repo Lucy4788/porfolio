@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact 🙋‍♀️</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../css/contact.css" type="text/css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/2664ede48e.js" crossorigin="anonymous"></script> <!--Font Awesome-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> <!--Google font-->
+</head>
+<body>
+    <header>
+        <nav class="desktop">
+            <h3>TRANG VO</h3>
+            <ul>  
+                <li><button><a href="#">Contact</a></button></li> 
+                <li><a href="../html/works.html" target="blank" style="text-decoration: none; color: black">Works</a></li>
+                <li><a href="../html/main.html" target="blank">About</a></li>
+            </ul>
+        </nav>  
+        <nav class="mobile">
+            <h3>Trang T Vo</h3>
+            <div class="list">
+                <ul>
+                    <li><a href="../html/contact.html" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-briefcase"></i></a></li>
+                    <li><a href="../html/main.html"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="avatar">
+            <img src="../images/mobile/mobile-contact-avatar.jpg" alt="Trang Thuy Vo"/>
+        </section>
+        <section id="contact-info">
+            <div class="contact-details">
+                <p>Love my work? 
+                    Feel free to contact me for freelance work availability, and I will response within 1-3 business days.</p>
+                <p><i class="far fa-envelope"></i><a href="mailto:trangbyrne@gmail.com" target="blank">  trangbyrne@gmail.com</a></p>
+                <p><i class="fas fa-mobile-alt"></i>  +353 85 2349719</p>
+            </div>
+            <div class="social-media">
+                    <a href="https://www.facebook.com/trangthuyvo.88" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lucykikko/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://github.com/Lucy4788" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://codepen.io/dashboard/" target="_blank"><i class="fab fa-codepen"></i></a>
+                    <a href="https://www.linkedin.com/in/trangthuyvo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="contact-form">
+                <h3>Leave a message:</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <label for="email">
+                    <textarea id="email" name="extra" cols="66" rows="7" placeholder="Message"></textarea>
+                </label>
+                <form>
+                    <input type="submit" value="Send a message"/>
+                </form>
+            </div>
+        </section>
+
+        <section id="mobile-contact">
+            <div id="avatar-mobile">
+                <img src="../images/mobile/mobile-contact-avatar.jpg" alt="Trang Thuy Vo"/>
+            </div>
+            <div class="mobile-contact-details">
+                <p>Love my work? 
+                    Feel free to contact me for freelance work availability, and I will response within 1-3 business days.</p>
+                <p><i class="far fa-envelope"></i><a href="mailto:trangbyrne@gmail.com" target="blank">  trangbyrne@gmail.com</a></p>
+                <p><i class="fas fa-mobile-alt"></i>  +353 85 2349719</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/trangthuyvo.88" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lucykikko/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://github.com/Lucy4788" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://codepen.io/dashboard/" target="_blank"><i class="fab fa-codepen"></i></a>
+                <a href="https://www.linkedin.com/in/trangthuyvo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div>
+            <p> Copyright 2020 Trang Vo. All Rights Reserved.</p>
+            <p><i class="fas fa-code"></i> by Trang Vo.</p>
+        </div>
+    </footer>
+    <script>
+        let sendMsg = document.querySelector("form");
+            sendMsg.addEventListener("click", sendBtn);
+
+        function sendBtn(){
+              alert("Thank you for your message, I'll be in touch soon!");
+            }
+    </script>
+    
+</body>
+</html>
